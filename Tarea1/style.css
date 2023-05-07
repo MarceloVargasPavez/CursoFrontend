@@ -1,3 +1,17 @@
 .header-item{
-    border: 1px solid red;
+    position:fixed;
+    height: auto;
+    width: auto;
+    flex: auto;
+    border: 1px solid black;
+}
+
+.icono{
+    width: 150px;
+    position:relative;
+    right: 0;
+}
+
+.opciones{
+    position:fixed;
 }
