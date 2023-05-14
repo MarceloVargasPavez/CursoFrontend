@@ -1,31 +1,32 @@
+/* Para Celular */
+
 .contenedor-principal {
   display: flex;
   flex-direction: column;
-  height: 1500px;
+  height: 100vh;
 }
 
 /* header */
 
 .header-item {
-  background-color: #494e4e;
-  height: 120px;
+  height: 300px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  justify-content:center;
+  align-items: end;
+  background-color: #494e4e;
 }
 
 .icono {
   position: absolute;
   left: 2%;
-  top: 4%;
-  width: 100px;
+  top: 2%;
+  width: 150px;
 }
 
 .links-header {
   margin: 0 10px;
-  font-size: 100%;
+  font-size: 15px;
   color: black;
   text-decoration: none;
 }
@@ -33,8 +34,12 @@
 /* nav */
 
 .nav-item {
-    display: flex;
-    height: 855px;
+  display: flex;
+  height: "400px";
+}
+
+#carouselExampleCaptions {
+  width: 100%;
 }
 
 /* main */
@@ -46,23 +51,107 @@
   height: 250px;
   background-color: rgb(113, 110, 110);
 
-  #parrafo1{
+  #parrafo1 {
     text-align: center;
-    max-width: 600px;
+    max-width: 200px;
     margin: 0 auto;
+    font-size: 10px;
   }
 }
 
-/* footer */
+/* footer (Se utiliza column en flex-direction debido al espacio*/
 
 .footer-item {
   height: 300px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  border: 1px solid saddlebrown;
+  background-color: #3f4040;
 }
 
-.pilar{
-    
+.pilar {
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 6px;
+}
+
+/* Para Pc */
+
+@media screen and (min-width: 1280px) {
+  .contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* header */
+
+  .header-item {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #494e4e;
+  }
+
+  .icono {
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    width: 100px;
+  }
+
+  .links-header {
+    margin: 0 10px;
+    font-size: 100%;
+    color: black;
+    text-decoration: none;
+  }
+
+  /* nav */
+
+  .nav-item {
+    display: flex;
+    height: "400px";
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+
+  /* main */
+
+  .main-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    background-color: rgb(113, 110, 110);
+
+    #parrafo1 {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 15px;
+    }
+  }
+
+  /* footer */
+
+  .footer-item {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3f4040;
+  }
+
+  .pilar {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 12px;
+  }
 }
