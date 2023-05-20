@@ -1,0 +1,15 @@
+.Layout_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  background-color: $nav_color;
+  height: "400px";
+}
+
+.icono {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  width: 150px;
+}
