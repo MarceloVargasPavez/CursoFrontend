@@ -1,0 +1,26 @@
+.Layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 400px 300px 400px;
+  height: calc(100vh - 16px);
+}
+
+//   Tablet
+@media screen and (min-width: 768px) and (max-width: 1368px) {
+  .Layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px 300px 400px;
+    height: calc(100vh - 16px);
+  }
+}
+
+//   Pc
+@media screen and (min-width: 1368px) {
+  .Layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px 300px 400px;
+    height: calc(100vh - 16px);
+  }
+}

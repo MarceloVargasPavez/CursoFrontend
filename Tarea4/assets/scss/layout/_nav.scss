@@ -1,0 +1,20 @@
+.Layout_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  background-color: $nav_color;
+}
+
+.links-nav{
+  color: white;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.icono {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  width: 150px;
+}
